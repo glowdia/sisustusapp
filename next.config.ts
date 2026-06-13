@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  outputFileTracingIncludes: {
+    "/*": ["./tuotelista-muokattu.csv", "./tikkurila_tunne_vari_2020.csv"],
+  },
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config;
